@@ -31,6 +31,8 @@ target_sources(LuluBuilder PRIVATE
     Source/UI/StructureDisplay.cpp
 )
 
+juce_generate_juce_header(LuluBuilder)
+
 target_include_directories(LuluBuilder PRIVATE Source)
 
 target_compile_definitions(LuluBuilder PUBLIC
