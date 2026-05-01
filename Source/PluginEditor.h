@@ -18,7 +18,7 @@ private:
     // Appelé toutes les 200ms pour rafraîchir l'affichage
     void timerCallback() override;
 
-    LuluBuilderProcessor& processor;
+    LuluBuilderProcessor& luluProcessor;
     StructureDisplay      sectionDisplay;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(LuluBuilderEditor)

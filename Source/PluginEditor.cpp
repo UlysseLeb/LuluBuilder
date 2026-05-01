@@ -1,7 +1,7 @@
 #include "PluginEditor.h"
 
 LuluBuilderEditor::LuluBuilderEditor(LuluBuilderProcessor& p)
-    : AudioProcessorEditor(&p), processor(p)
+    : AudioProcessorEditor(&p), luluProcessor(p)
 {
     addAndMakeVisible(sectionDisplay);
     setSize(400, 300);
@@ -20,5 +20,5 @@ void LuluBuilderEditor::resized()
 
 void LuluBuilderEditor::timerCallback()
 {
-    sectionDisplay.setSection(processor.getCurrentSection());
+    sectionDisplay.setSection(luluProcessor.getCurrentSection());
 }
